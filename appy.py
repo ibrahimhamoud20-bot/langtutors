@@ -6,7 +6,7 @@ import os
 
 # --- CONFIGURATION ---
 # REPLACE THE TEXT BELOW WITH YOUR REAL API KEY FROM Google AI Studio
-API_KEY = st.secrects["GEMINI_KEY"]
+API_KEY = st.secrets["GEMINI_KEY"]
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash') 
